@@ -6,6 +6,8 @@ function createGrid(squaresPerSide){
     for (let i=0; i<squaresPerSide * squaresPerSide; ++i) {
         let square = document.createElement("div");
         square.className = "square";
+        square.style.width = `${920/squaresPerSide}px`;
+        square.style.height = `${920/squaresPerSide}px`;
         grid.appendChild(square);
     }
 
