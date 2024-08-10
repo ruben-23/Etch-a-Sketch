@@ -8,16 +8,18 @@ function createGrid(squaresPerSide){
         square.className = "square";
         grid.appendChild(square);
     }
+
+    const squares = grid.querySelectorAll("div");
+
+    squares.forEach( (square) => {
+
+        square.addEventListener( "mouseover", () => {
+            square.style.backgroundColor = 'white';
+        });
+    } );
+    
 }
-const squares = grid.querySelectorAll("div");
 
-squares.forEach( (square) => {
-
-    square.addEventListener( "mouseover", () => {
-        square.style.backgroundColor = 'white';
-    });
-
-} );
 
 const button = document.querySelector("button");
 
@@ -27,4 +29,8 @@ button.addEventListener("click", () => {
         squaresPerSide = parseInt(prompt("Enter the number of squares/side(max 100)"));
     } while(isNaN(squaresPerSide) || squaresPerSide < 1 || squaresPerSide > 100);
 
+    createGrid(squaresPerSide);
+
 })
+
+createGrid(squaresPerSide);
