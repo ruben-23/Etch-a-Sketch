@@ -8,6 +8,7 @@ body {
 
 .grid {
     width: 920px;
+    height: 920px;
     background-color: rgb(245, 71, 71);
     display: flex;
     flex-wrap: wrap;
@@ -16,8 +17,6 @@ body {
 
 .square {
     background-color: rgb(138, 138, 138);
-    width: 45px;
-    height: 45px;
 }
 
 button {
