@@ -3,11 +3,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
 }
 
 .grid {
-    width: 1860px;
+    width: 920px;
     padding: 30px;
     background-color: rgb(245, 71, 71);
     display: flex;
@@ -19,13 +19,13 @@ body {
 
 .square {
     background-color: rgb(138, 138, 138);
-    width: 100px;
-    height: 100px;
+    width: 45px;
+    height: 45px;
     border: 1px solid black;
 }
 
 button {
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 30px; 
-    font-size: 24px;
+    font-size: 18px;
 }
