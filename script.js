@@ -16,3 +16,13 @@ squares.forEach( (square) => {
     });
 
 } );
+
+const button = document.querySelector("button");
+
+button.addEventListener("click", () => {
+    
+    do{
+        squaresPerSide = parseInt(prompt("Enter the number of squares/side(max 100)"));
+    } while(isNaN(squaresPerSide) || squaresPerSide < 1 || squaresPerSide > 100);
+
+})
