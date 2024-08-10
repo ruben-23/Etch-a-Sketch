@@ -9,14 +9,13 @@ body {
 .grid {
     width: 920px;
     height: 920px;
-    background-color: rgb(245, 71, 71);
     display: flex;
     flex-wrap: wrap;
     border: 5px solid black;
 }
 
 .square {
-    background-color: rgb(138, 138, 138);
+    background-color: rgb(211, 211, 211);
 }
 
 button {
