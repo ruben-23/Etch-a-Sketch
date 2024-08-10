@@ -7,19 +7,21 @@ body {
 }
 
 .grid {
-    width: 1800px;
+    width: 1860px;
     padding: 30px;
-    background-color: red;
+    background-color: rgb(245, 71, 71);
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    border: 5px solid black;
 }
 
 .square {
-    background-color: gray;
+    background-color: rgb(138, 138, 138);
     width: 100px;
     height: 100px;
+    border: 1px solid black;
 }
 
 button {
