@@ -1,0 +1,16 @@
+
+.grid {
+    width: 1800px;
+    padding: 30px;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.square {
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+}
