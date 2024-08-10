@@ -1,8 +1,12 @@
+
 let squaresPerSide = 16;
 
 const grid = document.querySelector(".grid");
 
+const button = document.querySelector("button");
+
 function createGrid(squaresPerSide){
+    
     for (let i=0; i<squaresPerSide * squaresPerSide; ++i) {
         let square = document.createElement("div");
         square.className = "square";
@@ -19,7 +23,6 @@ function createGrid(squaresPerSide){
             square.style.backgroundColor = 'white';
         });
     } );
-
 }
 
 function clearGrid(){
@@ -28,9 +31,6 @@ function clearGrid(){
         grid.removeChild(grid.lastElementChild);
     }
 }
-
-
-const button = document.querySelector("button");
 
 button.addEventListener("click", () => {
     
@@ -41,6 +41,6 @@ button.addEventListener("click", () => {
     clearGrid();
     createGrid(squaresPerSide);
 
-})
+});
 
 createGrid(squaresPerSide);
